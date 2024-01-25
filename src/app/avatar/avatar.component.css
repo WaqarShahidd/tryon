@@ -1,0 +1,104 @@
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #4f52ff,
+    #f19c78
+  );
+}
+
+.camera {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px; 
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px; 
+  margin-top: 20px; 
+}
+
+button {
+  background-color: #ffffff; 
+  color: #333; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+/* styles.css */
+
+.container {
+  width: 80vw;
+  overflow: hidden;
+}
+
+.center-circle {
+  width: 350px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.camera-container {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+ngx-webcam {
+  width: 100%;
+  height: 100%;
+  border-radius: 360px;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+@keyframes aura {
+  0% {
+    box-shadow: 0 0 20px 5px #ff0000;
+  }
+  25% {
+    box-shadow: 0 0 20px 20px #ffcc00;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px #00cc00;
+  }
+  75% {
+    box-shadow: 0 0 20px 20px #0066ff;
+  }
+  100% {
+    box-shadow: 0 0 20px 5px #ff0000;
+  }
+}
+
+/* Apply the aura animation to the circle */
+.center-circle {
+  animation: aura 5s linear infinite;
+}
+
+.right-container {
+  background-color: #00002e;
+}
+
+.btn-primary {
+  background-color: #3c46ff;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #3c46ff;
+  width: 100%;
+}

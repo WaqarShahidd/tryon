@@ -1,0 +1,227 @@
+<div class="bg-slate-50">
+  <app-navbar></app-navbar>
+
+  <div class="mt-12 px-11 grid lg:grid-cols-2 gap-x-14 grid-cols-1">
+    <!-- Billing Detail -->
+    <div class="lg:mb-10 mb-16">
+      <h3 class="text-black font-bold">Contact Information</h3>
+
+      <div class="mt-5">
+        <p class="text-slate-900 text-sm font-medium">Email Address</p>
+        <input
+          class="w-full shadow border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+          type="text"
+          placeholder=""
+        />
+      </div>
+
+      <!-- Separator -->
+      <div class="separator my-8 bg-slate-300"></div>
+
+      <h3 class="text-black font-bold">Contact Information</h3>
+
+      <div class="flex flex-row items-center mt-5">
+        <div class="w-full mr-4">
+          <p class="text-slate-900 text-sm font-medium">First Name</p>
+          <input
+            class="shadow name-input border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+            type="text"
+            placeholder=""
+          />
+        </div>
+        <div class="w-full">
+          <p class="text-slate-900 text-sm font-medium">Last Name</p>
+          <input
+            class="shadow name-input border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+            type="text"
+            placeholder=""
+          />
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <p class="text-slate-900 text-sm font-medium">Address</p>
+        <input
+          class="shadow w-full border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+          type="text"
+          placeholder=""
+        />
+      </div>
+
+      <div class="flex flex-row items-center mt-5">
+        <div class="w-full mr-4">
+          <p class="text-slate-900 text-sm font-medium">City</p>
+          <input
+            class="shadow name-input border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+            type="text"
+            placeholder=""
+          />
+        </div>
+        <div class="w-full">
+          <p class="text-slate-900 text-sm font-medium">Country</p>
+          <input
+            class="shadow name-input border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+            type="text"
+            placeholder=""
+          />
+        </div>
+      </div>
+      <div class="flex flex-row items-center mt-5">
+        <div class="w-full mr-4">
+          <p class="text-slate-900 text-sm font-medium">State/Province</p>
+          <input
+            class="shadow name-input border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+            type="text"
+            placeholder=""
+          />
+        </div>
+        <div class="w-full">
+          <p class="text-slate-900 text-sm font-medium">Postal Code</p>
+          <input
+            class="shadow name-input border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+            type="text"
+            placeholder=""
+          />
+        </div>
+      </div>
+
+      <!-- Payment -->
+      <div class="separator my-8 bg-slate-300"></div>
+
+      <h3 class="text-black font-bold">Payment</h3>
+      <div class="mt-5">
+        <p class="text-slate-900 text-sm font-medium">Card Number</p>
+        <input
+          class="shadow w-full border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+          type="text"
+          placeholder=""
+        />
+      </div>
+
+      <div class="flex flex-row items-center mt-5">
+        <div class="w-full mr-4">
+          <p class="text-slate-900 text-sm font-medium">Expiration Date</p>
+          <input
+            class="shadow name-input border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+            type="text"
+            placeholder=""
+          />
+        </div>
+        <div class="w-full">
+          <p class="text-slate-900 text-sm font-medium">CVC</p>
+          <input
+            class="shadow name-input border border-slate-300 rounded-md px-3 py-1 mt-1 focus:ring-2 ring-blue-500 outline-none"
+            type="text"
+            placeholder=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="">
+      <h3 class="text-black font-bold mb-5">Order Summary</h3>
+
+      <div class="bg-white rounded-lg shadow mb-11">
+        <!-- Product Detail -->
+        <div class="flex flex-row m-4 py-4">
+          <img class="w-20 h-28 rounded-lg" src="../../assets/product1.jpg" />
+
+          <div class="flex flex-col justify-between">
+            <div class="ml-5 flex flex-row justify-between">
+              <div>
+                <p class="text-black text-sm font-medium">Product Name</p>
+                <p class="text-gray-600 text-xs font-normal">Black</p>
+                <p class="text-gray-600 text-xs font-normal">Large</p>
+              </div>
+
+              <i class="fa-solid fa-trash"></i>
+            </div>
+            <div class="btn-row ml-5 flex flex-row justify-between">
+              <p class="text-slate-900 text-sm font-medium">$32.33</p>
+              <div>
+                <label for="quantity" class="sr-only">Quantity</label>
+                <select
+                  id="quantity"
+                  name="quantity"
+                  class="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="separator my-5 bg-slate-300 w-full"></div>
+        <div class="flex flex-row m-4 py-4">
+          <img class="w-20 h-28 rounded-lg" src="../../assets/product2.jpg" />
+
+          <div class="flex flex-col justify-between">
+            <div class="ml-5 flex flex-row justify-between">
+              <div>
+                <p class="text-black text-sm font-medium">Product Name</p>
+                <p class="text-gray-600 text-xs font-normal">Black</p>
+                <p class="text-gray-600 text-xs font-normal">Large</p>
+              </div>
+
+              <i class="fa-solid fa-trash"></i>
+            </div>
+            <div class="btn-row ml-5 flex flex-row justify-between">
+              <p class="text-slate-900 text-sm font-medium">$32.33</p>
+              <div>
+                <label for="quantity" class="sr-only">Quantity</label>
+                <select
+                  id="quantity"
+                  name="quantity"
+                  class="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Separator -->
+        <div class="separator mt-5 mb-2 bg-slate-300 w-full"></div>
+
+        <!-- Total -->
+        <div class="p-4">
+          <div class="flex flex-wrap justify-between">
+            <p class="text-sm">Subtotal</p>
+            <p class="font-normal">$64.00</p>
+          </div>
+          <div class="flex flex-wrap justify-between my-4">
+            <p class="text-sm">Shipping</p>
+            <p class="font-normal">$500</p>
+          </div>
+          <div class="flex flex-wrap justify-between">
+            <p class="text-sm">Taxes</p>
+            <p class="font-normal">$5.66</p>
+          </div>
+          <div class="separator mt-5 mb-2 bg-slate-300 w-full"></div>
+          <div class="flex flex-wrap justify-between mt-4">
+            <p class="text-lg font-semibold">Total</p>
+            <p class="text-lg font-semibold">$75.66</p>
+          </div>
+        </div>
+
+        <!-- Separator -->
+        <div class="separator mb-2 bg-slate-300 w-full"></div>
+
+        <!-- Confirm Btn -->
+        <div class="mx-4 pb-4 pt-2">
+          <button
+            class="flex items-center w-full justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+          >
+            Confirm Order
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

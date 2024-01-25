@@ -1,0 +1,102 @@
+<!-- @if (!previewImage){
+
+<div class="container">
+  <p>{{ stream }}</p>
+  <div class="camera">
+    <webcam
+      class="camera"
+      [trigger]="triggerObservable"
+      (imageCapture)="handleImage($event)"
+    ></webcam>
+  </div>
+  <button (click)="triggerSnapshot()">Take a photo</button>
+</div>
+} @if (previewImage){
+<div class="container">
+  <button (click)="triggerSnapshot()">Re-take a photo</button>
+  <img [src]="previewImage" />
+  <button routerLink="product-page">Confirm avatar</button>
+</div>
+} -->
+
+<!-- <div class="bg-black h-screen overflow-hidden">
+  <div class="grid grid-cols-2 max-w-xl">
+    <div class="center-circle mt-4">
+      <div class="camera-container">
+        <webcam
+          class="max-w-3xl"
+          [trigger]="triggerObservable"
+          (imageCapture)="handleImage($event)"
+        ></webcam>
+      </div>
+    </div>
+    <div class="right-container">
+      <p></p>
+    </div>
+  </div>
+</div> -->
+
+<div class="h-screen overflow-hidden flex flex-row">
+  <div class="w-1/3 bg-black flex flex-col items-center py-12">
+    <img src="../../assets/logo.webp" class="h-14 w-14" />
+
+    <div class="h-full flex flex-col items-center justify-center">
+      <h1 class="text-xl font-extrabold text-white">Virtual Try On</h1>
+
+      <div class="flex flex-row items-center justify-between">
+        @if(!previewImage){
+
+        <button
+          class="btn-primary mt-8 text-white px-4 py-2 rounded-md font-bold mr-2"
+          (click)="triggerSnapshot()"
+        >
+          <span class="">Take a photo</span>
+        </button>
+
+        } @if(previewImage){
+        <div>
+          <button
+            class="btn-primary mt-8 text-white px-4 py-2 rounded-md font-bold"
+            (click)="previewImage = ''"
+          >
+            <span class="">Re-take a photo</span>
+          </button>
+          <button
+            class="btn-primary mt-8 text-white px-4 py-2 rounded-md font-bold"
+            routerLink="product-page"
+          >
+            <span class="">Confirm Avatar</span>
+          </button>
+        </div>
+        }
+        <!-- <button
+          class="btn-primary mt-8 text-white px-4 py-2 rounded-md font-bold"
+          (click)="triggerSnapshot()"
+        >
+          <span class="">Take a photo</span>
+        </button> -->
+      </div>
+    </div>
+  </div>
+  <div class="right-container w-2/3 flex items-center justify-center">
+    @if(!previewImage){
+
+    <div class="center-circle mt-4">
+      <div class="camera-container">
+        <webcam
+          class="max-w-3xl"
+          [trigger]="triggerObservable"
+          (imageCapture)="handleImage($event)"
+        ></webcam>
+      </div>
+    </div>
+    } @if(previewImage){
+    <div class="center-circle mt-4">
+      <div class="camera-container">
+        <img [src]="previewImage" class="max-w-3xl object-contain" />
+      </div>
+    </div>
+
+    }
+  </div>
+</div>
